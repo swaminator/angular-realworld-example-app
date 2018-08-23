@@ -1,0 +1,29 @@
+version: 0.1
+env:
+    variables: []
+build:
+    phases:
+        pre_build:
+            commands: ['yarn install']
+        build:
+            commands: ['yarn run build']
+        post_build:
+            commands: []
+    artifacts:
+        files: []
+        discardPaths: true
+        baseDirectory: /dist/
+    cache:
+        paths: []
+test:
+    phases:
+        pre_test:
+            commands: []
+        build:
+            commands: []
+        post_test:
+            commands: []
+    artifacts:
+        files: []
+        discardPaths: true
+        baseDirectory: /
